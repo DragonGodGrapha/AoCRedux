@@ -21,8 +21,7 @@ for line in inp:
     if matches: scores.append(2**(len(matches)-1))
     for delta in range(len(matches)):
         cards[cid+delta+1]+=cards[cid]
-    
-    
+
 partA=sum(scores)
 partB=sum(cards.values())
 
